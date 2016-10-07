@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+
+body {
+  background: #eee !important;
+}
+
+main {
+  margin-bottom: 15px;
+}
+
+footer figure, main figure {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+figure img {
+  width: 100%;
+}
+
+picture img {
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #999;
+}
+
+footer figure img {
+  max-width: 435px;
+}
+
+figure {
+  margin-top: 0 !important;
+}
+
+figure figcaption {
+  margin-top: 10px;
+}
+
+.header-section h1, .header-section span {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: #2d3c49;
+  font-weight: 100;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.divider {
+  border: 1px solid #7d97ad;
+  margin: 10px 0 15px;
+}
+
+.featured-work {
+  font-family: cursive, sans-serif;
+}
+
+.featured-work h2 {
+  color: #7d97ad;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 10px;
+}
+
+.featured-work article figcaption {
+  text-transform: uppercase;
+}
+
+#container {
+  margin: 15px 0;
+}
+
+#logo {
+  min-width: 60px;
+  max-width: 80px;
+}
+
+/*
+ *
+ * Media Queries
+ *
+ */
+@media screen and (min-width: 459px) {
+  .header-section h1 {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 458px) {
+  #logo {
+    height: 55px;
+  }
+}
+
+@media screen and (min-width: 1045px) {
+  #container {
+    margin: calc((100vw - 62.5rem) / 3) 0;
+  }
+}
