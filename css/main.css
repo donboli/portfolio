@@ -38,8 +38,8 @@ figure figcaption {
   margin-top: 10px;
 }
 
-.header-section h1, .header-section span {
-  font-family: 'Roboto', sans-serif;
+.header-title, .header-subtitle {
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   color: #2d3c49;
   font-weight: 100;
@@ -63,14 +63,14 @@ figure figcaption {
   font-family: cursive, sans-serif;
 }
 
-.featured-work h2 {
-  color: #7d97ad;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif;
+.featured-title {
+  color: #7d97ad !important;
+  font-weight: bold !important;
+  font-family: "Roboto", sans-serif;
   margin-left: 10px;
 }
 
-.featured-work article figcaption {
+.featured-caption {
   text-transform: uppercase;
 }
 
@@ -89,7 +89,7 @@ figure figcaption {
  *
  */
 @media screen and (min-width: 459px) {
-  .header-section h1 {
+  .header-title {
     font-size: 3em;
   }
 }
