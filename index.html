@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="framework/css/foundation.min.css">
     <script src="framework/js/jquery.js"></script>
     <script src="framework/js/foundation.min.js"></script>
+    <script src="framework/js/what-input.js"></script>
+    <script src="js/main.js"></script>
   </head>
 
   <body id="container">
@@ -27,15 +29,20 @@
       <hr class="divider">
 
       <main>
+        <div id="main-reveal" class="reveal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+          <h2 id="modalTitle">Cabin</h2>
+          <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nulla facilis optio, non repellendus natus, molestiae a cupiditate inventore sint architecto ipsa! Eaque inventore harum, ab ut est facilis id. Tempora ab commodi aspernatur, saepe est accusamus, numquam vitae pariatur sit, at hic. Officia necessitatibus dolorem, velit autem magnam mollitia error explicabo suscipit, amet dolorum pariatur ad cumque sed sequi eum dolore consequuntur id nesciunt, ipsam culpa nostrum rerum vitae aliquam quasi. Vitae, laudantium libero magni. Facilis sunt, maiores dolorem dicta consequatur facere maxime ipsum, aspernatur veniam voluptatem consectetur ea eligendi tenetur delectus fugit. Molestias, enim, ab. Alias, veniam, cum.
+            </p>
+          <a class="close-button" data-close aria-label="Close">&#215;</a>
+        </div>
+
         <div class="row">
           <div class="columns small-12">
-            <picture>
+            <picture data-open="main-reveal">
               <source sizes="100vw" srcset="images/tailored/cabin-320_small.jpg 320w, images/tailored/cabin-640_medium.jpg 640w, images/tailored/cabin-1024_large.jpg 1024w, images/tailored/cabin-1920_xlarge.jpg 1920w">
               <img src="images/tailored/cabin-320_small.jpg" alt="cabin">
             </picture>
-            <p class="description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nulla facilis optio, non repellendus natus, molestiae a cupiditate inventore sint architecto ipsa! Eaque inventore harum, ab ut est facilis id. Tempora ab commodi aspernatur, saepe est accusamus, numquam vitae pariatur sit, at hic. Officia necessitatibus dolorem, velit autem magnam mollitia error explicabo suscipit, amet dolorum pariatur ad cumque sed sequi eum dolore consequuntur id nesciunt, ipsam culpa nostrum rerum vitae aliquam quasi. Vitae, laudantium libero magni. Facilis sunt, maiores dolorem dicta consequatur facere maxime ipsum, aspernatur veniam voluptatem consectetur ea eligendi tenetur delectus fugit. Molestias, enim, ab. Alias, veniam, cum.
-            </p>
           </div>
         </div>
       </main>
@@ -46,30 +53,51 @@
             <h2 class="subheader">Featured Work</h2>
             <div class="row text-center">
               <article class="columns small-12 medium-6 large-4">
+                <div id="lake-reveal" class="reveal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                  <h2 id="modalTitle">Lake</h2>
+                  <p class="description">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nulla facilis optio, non repellendus natus, molestiae a cupiditate inventore sint architecto ipsa! Eaque inventore harum, ab ut est facilis id. Tempora ab commodi aspernatur, saepe est accusamus, numquam vitae pariatur sit, at hic. Officia necessitatibus dolorem, velit autem magnam mollitia error explicabo suscipit, amet dolorum pariatur ad cumque sed sequi eum dolore consequuntur id nesciunt, ipsam culpa nostrum rerum vitae aliquam quasi. Vitae, laudantium libero magni. Facilis sunt, maiores dolorem dicta consequatur facere maxime ipsum, aspernatur veniam voluptatem consectetur ea eligendi tenetur delectus fugit. Molestias, enim, ab. Alias, veniam, cum.
+                    </p>
+                  <a class="close-button" data-close aria-label="Close">&#215;</a>
+                </div>
                 <figure>
                   <picture>
                     <source sizes="(min-width: 705px) 50vw, (min-width: 1127px) 30vw, 100vw" srcset="images/tailored/lake-320_small.jpg 320w, images/tailored/lake-640_medium.jpg 640w, images/tailored/lake-1024_large.jpg 1024w, images/tailored/lake-1920_xlarge.jpg 1920w">
-                    <img src="images/tailored/lake-320_small.jpg" alt="lake">
+                    <img src="images/tailored/lake-320_small.jpg" data-open="lake-reveal" alt="lake">
                   </picture>
                   <figcaption><h3>Lake</h3></figcaption>
                 </figure>
                 <a href="#">Lake</a>
               </article>
               <article class="columns small-12 medium-6 large-4">
+                <div id="river-reveal" class="reveal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                  <h2 id="modalTitle">River</h2>
+                  <p class="description">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nulla facilis optio, non repellendus natus, molestiae a cupiditate inventore sint architecto ipsa! Eaque inventore harum, ab ut est facilis id. Tempora ab commodi aspernatur, saepe est accusamus, numquam vitae pariatur sit, at hic. Officia necessitatibus dolorem, velit autem magnam mollitia error explicabo suscipit, amet dolorum pariatur ad cumque sed sequi eum dolore consequuntur id nesciunt, ipsam culpa nostrum rerum vitae aliquam quasi. Vitae, laudantium libero magni. Facilis sunt, maiores dolorem dicta consequatur facere maxime ipsum, aspernatur veniam voluptatem consectetur ea eligendi tenetur delectus fugit. Molestias, enim, ab. Alias, veniam, cum.
+                    </p>
+                  <a class="close-button" data-close aria-label="Close">&#215;</a>
+                </div>
                 <figure>
                   <picture>
                     <source sizes="(min-width: 705px) 50vw, (min-width: 1127px) 30vw, 100vw" srcset="images/tailored/river-320_small.jpg 320w, images/tailored/river-640_medium.jpg 640w, images/tailored/river-1024_large.jpg 1024w, images/tailored/river-1920_xlarge.jpg 1920w">
-                    <img src="images/tailored/river-320_small.jpg" alt="river">
+                    <img src="images/tailored/river-320_small.jpg" data-open="river-reveal" alt="river">
                   </picture>
                   <figcaption><h3>River</h3></figcaption>
                 </figure>
                 <a href="#">River</a>
               </article>
               <article class="columns">
+                <div id="sunflowers-reveal" class="reveal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                  <h2 id="modalTitle">Sunflowers</h2>
+                  <p class="description">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nulla facilis optio, non repellendus natus, molestiae a cupiditate inventore sint architecto ipsa! Eaque inventore harum, ab ut est facilis id. Tempora ab commodi aspernatur, saepe est accusamus, numquam vitae pariatur sit, at hic. Officia necessitatibus dolorem, velit autem magnam mollitia error explicabo suscipit, amet dolorum pariatur ad cumque sed sequi eum dolore consequuntur id nesciunt, ipsam culpa nostrum rerum vitae aliquam quasi. Vitae, laudantium libero magni. Facilis sunt, maiores dolorem dicta consequatur facere maxime ipsum, aspernatur veniam voluptatem consectetur ea eligendi tenetur delectus fugit. Molestias, enim, ab. Alias, veniam, cum.
+                    </p>
+                  <a class="close-button" data-close aria-label="Close">&#215;</a>
+                </div>
                 <figure>
                   <picture>
                     <source sizes="(min-width: 705px) 50vw, (min-width: 1127px) 30vw, 100vw" srcset="images/tailored/sunflowers-320_small.jpg 320w, images/tailored/sunflowers-640_medium.jpg 640w, images/tailored/sunflowers-1024_large.jpg 1024w, images/tailored/sunflowers-1920_xlarge.jpg 1920w">
-                    <img src="images/tailored/sunflowers-320_small.jpg" alt="sunflowers">
+                    <img src="images/tailored/sunflowers-320_small.jpg" data-open="sunflowers-reveal" alt="sunflowers">
                   </picture>
                   <figcaption><h3>Sunflowers</h3></figcaption>
                 </figure>

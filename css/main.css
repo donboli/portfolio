@@ -22,6 +22,10 @@ picture img {
   box-shadow: 5px 5px 5px #999;
 }
 
+picture img:hover {
+  cursor: pointer;
+}
+
 footer figure img {
   max-width: 435px;
 }
